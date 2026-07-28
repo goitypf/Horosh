@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Матвей Кириллов — Код — мой спорт | Разработчик</title>
+<meta name="description" content="Портфолио разработчика из Камчатки. Дисциплина спорта высших достижений в каждой строке кода — проекты, принципы, путь.">
+<meta name="author" content="Матвей Кириллов">
+<meta name="keywords" content="разработчик, портфолио, программист, frontend, Камчатка, лыжные гонки">
+<link rel="canonical" href="https://example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Матвей Кириллов — Код — мой спорт">
+<meta property="og:description" content="Портфолио разработчика из Камчатки. Дисциплина спорта высших достижений в каждой строке кода.">
+<meta property="og:image" content="https://example.com/images/hero-portrait.svg">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Матвей Кириллов — Код — мой спорт">
+<meta name="twitter:description" content="Портфолио разработчика из Камчатки. Дисциплина спорта высших достижений в каждой строке кода.">
+<meta name="twitter:image" content="https://example.com/images/hero-portrait.svg">
+
+<meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230E0F11%22/><text x=%2250%22 y=%2266%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2255%22 fill=%22%23E0332B%22 text-anchor=%22middle%22>МК</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Матвей Кириллов",
+  "jobTitle": "Software Developer",
+  "url": "https://example.com/",
+  "description": "Разработчик из Камчатки с бэкграундом в лыжных гонках. Дисциплина спорта в каждой строке кода.",
+  "sameAs": [
+    "https://github.com/",
+    "https://t.me/",
+    "https://www.linkedin.com/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<div class="race-bar" aria-hidden="true">
+  <div class="race-bar__track">
+    <div class="race-bar__fill" id="raceFill"></div>
+  </div>
+  <span class="race-bar__time" id="raceTime">00:00</span>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header__inner">
+    <a href="#hero" class="logo" aria-label="Матвей Кириллов — на главную">
+      <span class="logo__mark">МК</span>
+      <span class="logo__text">код—спорт</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+      <span class="nav-toggle__box">
+        <span class="nav-toggle__bar"></span>
+      </span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Основная навигация">
+      <ol class="primary-nav__list">
+        <li><a href="#hero" class="primary-nav__link" data-nav>СТАРТ</a></li>
+        <li><a href="#about" class="primary-nav__link" data-nav><span class="km">1&nbsp;км</span> ОБО МНЕ</a></li>
+        <li><a href="#philosophy" class="primary-nav__link" data-nav><span class="km">3&nbsp;км</span> ПРИНЦИПЫ</a></li>
+        <li><a href="#projects" class="primary-nav__link" data-nav><span class="km">5&nbsp;км</span> ПРОЕКТЫ</a></li>
+        <li><a href="#journey" class="primary-nav__link" data-nav><span class="km">7&nbsp;км</span> ПУТЬ</a></li>
+        <li><a href="#contact" class="primary-nav__link primary-nav__link--finish" data-nav>ФИНИШ</a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Приветствие">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal>Разработчик · Камчатка</p>
+        <h1 class="hero__title" data-reveal>
+          Код —<br>
+          мой спорт<span class="accent-dot">.</span>
+        </h1>
+        <p class="hero__lead" data-reveal>
+          Я тренируюсь так же, как пишу код: каждый день, без пропусков,
+          с чётким результатом на выходе. Дисциплина не берётся из
+          мотивационных цитат — она берётся с трассы.
+        </p>
+        <div class="hero__actions" data-reveal>
+          <a href="#projects" class="btn btn--primary">Смотреть проекты</a>
+          <a href="#contact" class="btn btn--ghost">Написать мне</a>
+        </div>
+      </div>
+
+      <figure class="hero__figure" data-reveal>
+        <img
+          src="images/hero-portrait.svg"
+          alt="Чёрно-белый спортивный портрет: атлет на лыжной трассе в момент максимальной концентрации"
+          width="900" height="1100" loading="eager">
+        <figcaption>На старте. Камчатка, декабрь.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="section-inner about__grid">
+      <figure class="about__figure" data-reveal>
+        <img
+          src="images/nature-kamchatka.svg"
+          alt="Пейзажный портрет: вулканы и заснеженные сопки Камчатки на рассвете"
+          width="900" height="700" loading="lazy">
+        <figcaption>Камчатка. Место, где начинается дисциплина.</figcaption>
+      </figure>
+
+      <div class="about__copy">
+        <p class="section-eyebrow" data-reveal>01 / Обо мне</p>
+        <h2 class="section-title" id="about-title" data-reveal>Обо мне</h2>
+        <p data-reveal>
+          Мне 23 года, и почти половину из них я провёл на лыжне, а не за
+          клавиатурой. Я вырос на Камчатке — там, где тренировка начинается
+          затемно, а результат не спрятать за красивыми словами: либо ты
+          уложился в норматив, либо нет.
+        </p>
+        <p data-reveal>
+          Несколько лет назад я перенёс тот же подход в разработку:
+          ежедневную практику, разбор ошибок после каждой неудачной попытки
+          и уважение к цифрам, которые не врут — будь то время на дистанции
+          или время отклика сервера. Сейчас я пишу код так же, как раньше
+          выходил на старт: на пределе, но по плану.
+        </p>
+        <p class="about__note" data-reveal>
+          Кандидат в мастера спорта по лыжным гонкам → full-stack разработчик.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy" aria-labelledby="philosophy-title">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-reveal>02 / Принципы</p>
+      <h2 class="section-title" id="philosophy-title" data-reveal>Из спорта — в код</h2>
+      <p class="section-lead" data-reveal>
+        Четыре привычки, которые не изменились, когда трасса сменилась на терминал.
+      </p>
+
+      <div class="principles-grid">
+        <article class="principle-card" data-reveal>
+          <p class="principle-card__eyebrow">Тренировка</p>
+          <h3 class="principle-card__title">Ежедневная практика</h3>
+          <p>
+            Пропуск одной тренировки почти незаметен. Пропуск тридцати —
+            это провал сезона. Код пишу с той же регулярностью:
+            маленькими, стабильными подходами, а не рывками раз в месяц.
+          </p>
+        </article>
+
+        <article class="principle-card" data-reveal>
+          <p class="principle-card__eyebrow">Дисциплина</p>
+          <h3 class="principle-card__title">Чистый код</h3>
+          <p>
+            Техника на трассе экономит силы на финише. Аккуратная
+            архитектура экономит время через полгода, когда возвращаешься
+            к своему же коду и хочешь его понять, а не возненавидеть.
+          </p>
+        </article>
+
+        <article class="principle-card" data-reveal>
+          <p class="principle-card__eyebrow">Результат</p>
+          <h3 class="principle-card__title">Измеримость</h3>
+          <p>
+            В спорте есть секундомер, в разработке — тесты, метрики и
+            профилировщик. Я не верю в «кажется, стало быстрее» — верю
+            в цифры до и после.
+          </p>
+        </article>
+
+        <article class="principle-card" data-reveal>
+          <p class="principle-card__eyebrow">Команда</p>
+          <h3 class="principle-card__title">Код-ревью</h3>
+          <p>
+            Эстафета выигрывается на передаче палочки. Проект выигрывается
+            на code review: чужой свежий взгляд ловит то, что твой
+            уставший — уже нет.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects" aria-labelledby="projects-title">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-reveal>03 / Проекты</p>
+      <h2 class="section-title" id="projects-title" data-reveal>Проекты</h2>
+      <p class="section-lead" data-reveal>
+        Личные рекорды, зафиксированные в коммитах, а не в протоколах соревнований.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-reveal>
+          <figure class="project-card__figure">
+            <img
+              src="images/project-trailscope.svg"
+              alt="Скриншот интерфейса приложения Trailscope — трекера лыжных тренировок"
+              width="1200" height="800" loading="lazy">
+          </figure>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3 class="project-card__title">Trailscope</h3>
+              <span class="pr-badge">Личный рекорд: −40% времени загрузки</span>
+            </div>
+            <p>
+              Трекер лыжных тренировок: карта дистанций, аналитика темпа
+              и пульса, синхронизация с GPS-часами. Начинался как
+              приложение для себя, вырос до open source с внешними
+              контрибьюторами.
+            </p>
+            <ul class="tag-list" aria-label="Технологии проекта">
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Mapbox</li>
+            </ul>
+            <a href="#" class="project-card__link">Подробнее о проекте →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <figure class="project-card__figure">
+            <img
+              src="images/project-raceday.svg"
+              alt="Скриншот интерфейса платформы RaceDay для организаторов соревнований"
+              width="1200" height="800" loading="lazy">
+          </figure>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3 class="project-card__title">RaceDay</h3>
+              <span class="pr-badge">Личный рекорд: 300+ участников на старте</span>
+            </div>
+            <p>
+              Платформа для организаторов соревнований: регистрация,
+              стартовые протоколы, результаты в реальном времени.
+              Выросла из моей же головной боли — судейского планшета
+              с экселем на морозе.
+            </p>
+            <ul class="tag-list" aria-label="Технологии проекта">
+              <li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>WebSocket</li>
+            </ul>
+            <a href="#" class="project-card__link">Подробнее о проекте →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <figure class="project-card__figure">
+            <img
+              src="images/project-pixelpeak.svg"
+              alt="Скриншот проекта PixelPeak — визуализация данных о вулканах Камчатки"
+              width="1200" height="800" loading="lazy">
+          </figure>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3 class="project-card__title">PixelPeak</h3>
+              <span class="pr-badge">Личный рекорд: первый pet-проект в продакшне</span>
+            </div>
+            <p>
+              Интерактивная визуализация сейсмической и вулканической
+              активности Камчатки на открытых данных. Повод разобраться
+              в D3.js — и заодно рассказать о доме что-то, кроме снега.
+            </p>
+            <ul class="tag-list" aria-label="Технологии проекта">
+              <li>Python</li><li>D3.js</li><li>FastAPI</li><li>Docker</li>
+            </ul>
+            <a href="#" class="project-card__link">Подробнее о проекте →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="journey" id="journey" aria-labelledby="journey-title">
+    <div class="section-inner">
+      <p class="section-eyebrow" data-reveal>04 / Путь</p>
+      <h2 class="section-title" id="journey-title" data-reveal>Путь</h2>
+      <p class="section-lead" data-reveal>
+        Хронология одной и той же дисциплины на двух разных дистанциях.
+      </p>
+
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <figure class="timeline__avatar">
+            <img src="images/avatar-1.svg" alt="Фото со старта первых лыжных соревнований, 2016 год" width="200" height="200" loading="lazy">
+          </figure>
+          <div class="timeline__body">
+            <span class="timeline__year">2016</span>
+            <h3 class="timeline__title">Первый старт</h3>
+            <p>Начал заниматься лыжными гонками в местной спортшколе на Камчатке.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item" data-reveal>
+          <figure class="timeline__avatar">
+            <img src="images/avatar-2.svg" alt="Фото с награждения, 2019 год" width="200" height="200" loading="lazy">
+          </figure>
+          <div class="timeline__body">
+            <span class="timeline__year">2019</span>
+            <h3 class="timeline__title">КМС</h3>
+            <p>Выполнил норматив кандидата в мастера спорта по лыжным гонкам.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item" data-reveal>
+          <figure class="timeline__avatar">
+            <img src="images/avatar-3.svg" alt="Фото за ноутбуком на сборах, 2021 год" width="200" height="200" loading="lazy">
+          </figure>
+          <div class="timeline__body">
+            <span class="timeline__year">2021</span>
+            <h3 class="timeline__title">Первые строки кода</h3>
+            <p>Начал учиться программировать параллельно со сборами — по вечерам, между тренировками.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item" data-reveal>
+          <figure class="timeline__avatar">
+            <img src="images/avatar-4.svg" alt="Портретное фото, 2023 год" width="200" height="200" loading="lazy">
+          </figure>
+          <div class="timeline__body">
+            <span class="timeline__year">2023 — сейчас</span>
+            <h3 class="timeline__title">Смена дистанции</h3>
+            <p>Ушёл из большого спорта в разработку. Первые продакшн-релизы, первые open source контрибьюторы.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="section-inner contact__inner">
+      <p class="section-eyebrow" data-reveal>05 / Финиш</p>
+      <h2 class="section-title" id="contact-title" data-reveal>Финиш. Или старт нового отрезка.</h2>
+      <p class="section-lead" data-reveal>
+        Открыт к предложениям, интересным задачам и разговорам о том,
+        как совмещать спорт высоких достижений с разработкой.
+        Отвечаю в течение 24 часов — как и на старте, не люблю опаздывать.
+      </p>
+
+      <ul class="contact-list" data-reveal>
+        <li>
+          <a href="mailto:hello@example.com" class="contact-list__link">
+            <span class="contact-list__label">Email</span>
+            <span class="contact-list__value">hello@example.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/" class="contact-list__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-list__label">Telegram</span>
+            <span class="contact-list__value">@matvey.dev</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" class="contact-list__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-list__label">GitHub</span>
+            <span class="contact-list__value">github.com/matvey</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" class="contact-list__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-list__label">LinkedIn</span>
+            <span class="contact-list__value">in/matvey-kirillov</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner site-footer__inner">
+    <p>© <span id="year">2026</span> Матвей Кириллов. Код — мой спорт.</p>
+    <a href="#hero" class="back-to-top">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
